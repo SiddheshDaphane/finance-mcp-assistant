@@ -12,7 +12,7 @@ DATABASE_URL = (
 )
 
 # ─── Engine & Session ─────────────────────────────────────────
-engine = create_engine(DATABASE_URL, echo=True)  # echo=True logs all SQL queries
+engine = create_engine(DATABASE_URL, echo=False)  # echo=True logs all SQL queries
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # ─── Base class for all models ────────────────────────────────

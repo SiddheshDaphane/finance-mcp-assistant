@@ -15,7 +15,7 @@ def get_transactions(db: Session, month: int = None, year: int = None, category:
     if year:
         query = query.filter(extract('year', Transaction.date) == year)
     if category:
-        query = query.filter(Transaction.category == category)
+        query = query.filter(Transaction.category.ilike(category))
 
     return query.order_by(Transaction.date.desc()).all()
 
