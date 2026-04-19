@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from database import engine, Base, SessionLocal
+from db import engine, Base, SessionLocal
 from models import Transaction, Budget, Bill
 
 

@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from database import SessionLocal
+from db import SessionLocal
 from crud import get_transactions, get_budgets, get_budget_summary, get_bills, get_overdue_bills
 
 db = SessionLocal()

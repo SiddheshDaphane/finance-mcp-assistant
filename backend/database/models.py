@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Numeric, Date, Boolean, Text, TIMESTAMP, CheckConstraint
 from sqlalchemy.sql import func
-from database import Base
+from db import Base
 
 
 class Transaction(Base):

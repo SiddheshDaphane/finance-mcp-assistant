@@ -1,3 +1,4 @@
+from db import SessionLocal
 from sqlalchemy.orm import Session
 from sqlalchemy import extract, func
 from models import Transaction, Budget, Bill
